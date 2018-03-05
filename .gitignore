@@ -1,4 +1,6 @@
-build_ios
-build_v7a
-build_x86
-build_osx
+build/build_ios
+build/build_v7a
+build/build_x86
+build/build_osx
+build/build64
+build/build32
