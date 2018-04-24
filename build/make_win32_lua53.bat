@@ -1,4 +1,5 @@
 mkdir build32 & pushd build32
+del /f .\CMakeCache.txt
 cmake -G "Visual Studio 14 2015" ..
 popd
 cmake --build build32 --config Release
