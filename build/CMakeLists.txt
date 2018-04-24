@@ -31,6 +31,16 @@ find_path(XLUA_PROJECT_DIR NAMES SConstruct
 
 MARK_AS_ADVANCED(XLUA_PROJECT_DIR)
 
+#begin sproto
+set (SPROTO_SRC 
+    sproto/lsproto.c
+    sproto/sproto.c
+)
+
+list(APPEND THIRDPART_INC sproto)
+set (THIRDPART_SRC ${THIRDPART_SRC} ${SPROTO_SRC})
+#end sproto
+
 #begin lua-rapidjson
 set (RAPIDJSON_SRC lua-rapidjson/source/rapidjson.cpp)
 set_property(
