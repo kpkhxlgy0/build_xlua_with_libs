@@ -4,3 +4,4 @@ build/build_x86
 build/build_osx
 build/build64
 build/build32
+build/build_android_x86
