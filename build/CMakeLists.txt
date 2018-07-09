@@ -31,6 +31,16 @@ find_path(XLUA_PROJECT_DIR NAMES SConstruct
 
 MARK_AS_ADVANCED(XLUA_PROJECT_DIR)
 
+#begin md5
+set (MD5_SRC
+    lua-md5/compat-5.2.c
+    lua-md5/md5.c
+    lua-md5/md5lib.c
+)
+list(APPEND THIRDPART_INC lua-md5)
+set (THIRDPART_SRC ${THIRDPART_SRC} ${MD5_SRC})
+#end md5
+
 #begin sproto
 set (SPROTO_SRC 
     sproto/lsproto.c

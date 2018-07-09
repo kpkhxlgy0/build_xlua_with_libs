@@ -1,5 +1,3 @@
-set ANDROID_NDK=C:\android-ndk-r13b
-set ANDROID_SDK=%USERPROFILE%\Documents\Android\Sdk
 for /f %%a in ('dir /a:d /b %ANDROID_SDK%\cmake\') do set cmake_version=%%a
 set cmake_bin=%ANDROID_SDK%\cmake\%cmake_version%\bin\cmake.exe
 set ninja_bin=%ANDROID_SDK%\cmake\%cmake_version%\bin\ninja.exe
