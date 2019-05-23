@@ -1,4 +1,5 @@
 build/build32
 build/build64
 build/build_v7a
+build/build_v8a
 build/build_android_x86
