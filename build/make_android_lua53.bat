@@ -5,7 +5,6 @@ set ninja_bin=%ANDROID_SDK%\cmake\%cmake_version%\bin\ninja.exe
 for %%a in ("%ANDROID_SDK%") do set "p_dir=%%~dpa"
 set android_ndk_root=%p_dir%android-ndk-r13b
 
-rd build_v7a /s /q
 mkdir build_v7a
 %cmake_bin% -H.\ -B.\build_v7a ^
     "-GAndroid Gradle - Ninja" ^
@@ -19,7 +18,6 @@ mkdir build_v7a
 mkdir .\plugin_lua53\Plugins\Android\Libs\armeabi-v7a
 move .\build_v7a\libxlua.so .\plugin_lua53\Plugins\Android\Libs\armeabi-v7a\libxlua.so
 
-rd build_android_x86 /s /q
 mkdir build_android_x86
 %cmake_bin% -H.\ -B.\build_android_x86 ^
     "-GAndroid Gradle - Ninja" ^
